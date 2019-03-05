@@ -10,6 +10,7 @@ module.exports = function contact(id) {
   if (id !== parseInt(id, 10)) {
     throw new Error('id needs to be integer');
   }
+
   faker.seed(id);
   return {
     userId: id,
